@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    text-align: center; /* Keskittää logon */
+    margin-bottom: 20px;
+}
+
+.content {
+    color: #333;
+    text-align: left; /* Siirtää otsikot vasempaan laitaan */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    text-align: left; /* Siirtää labelit vasempaan laitaan */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left; /* Siirtää tekstinsyöttökenttien tekstin vasempaan laitaan */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}

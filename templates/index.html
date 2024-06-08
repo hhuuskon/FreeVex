@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auton Tiedot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>Free Vex</h1>
+        </div>
+        <form id="carForm" action="/generate" method="post">
+            <h2>Auton Tiedot</h2>
+            <label for="brand">Merkki:</label>
+            <input type="text" id="brand" name="brand" required><br>
+
+            <label for="model">Malli:</label>
+            <input type="text" id="model" name="model" required><br>
+
+            <label for="year">Vuosimalli:</label>
+            <input type="number" id="year" name="year" required><br>
+
+            <label for="mileage">Ajetut kilometrit:</label>
+            <input type="number" id="mileage" name="mileage" required><br>
+
+            <h2>Omat Tiedot</h2>
+            <label for="name">Nimi:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="phone">Puhelinnumero:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="email">Sähköposti:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <button type="submit">Lataa Sähköpostipohja</button>
+        </form>
+    </div>
+</body>
+</html>
